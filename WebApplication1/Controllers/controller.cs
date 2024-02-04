@@ -10,8 +10,9 @@ namespace EncryptionDecryptionAPI.Controllers
     [ApiController]
     public class CryptoController : ControllerBase
     {
-        private static readonly byte[] Key = Encoding.UTF8.GetBytes("A key for AES");
-        private static readonly byte[] IV = Encoding.UTF8.GetBytes("An IV for AES");
+        private static readonly byte[] Key = new byte[16]; // 128 bitar
+        private static readonly byte[] IV = new byte[16]; // 128 bitar
+
 
         [HttpPost("encrypt")]
         public ActionResult<string> Encrypt([FromBody] string plainText)
