@@ -29,7 +29,7 @@ jobs:
               uses: einaregilsson/beanstalk-deploy@v21
               with: 
                 aws_access_key: ${{ AWS_KEY }}
-                aws_secret_key: ${{ AWS_KEY_KEY }}
+                aws_secret_key: ${{ AWS_SECRETS_KEY }}
                 application_name: webapi
                 environment_name: Webapi-env
                 version_label: ${{ github.run_id }}
