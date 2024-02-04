@@ -3,7 +3,7 @@ name: Build an push to AWS
 on:
     push:
         branches:
-            - "*"
+            - "master"
 
 
 jobs:
