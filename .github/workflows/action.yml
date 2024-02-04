@@ -28,8 +28,8 @@ jobs:
             - name: Deploy toaws EB
               uses: einaregilsson/beanstalk-deploy@v21
               with: 
-                aws_access_key: ${{ SECRETS_AWS_KEY_ID }}
-                aws_secret_key: ${{ SECRETS_AWS_SECRET_KEY }}
+                aws_access_key: ${{ secret_aws_key }}
+                aws_secret_key: ${{ secret_access_key }}
                 application_name: webapi
                 environment_name: webapi-env
                 version_label: ${{ github.run_id}}
