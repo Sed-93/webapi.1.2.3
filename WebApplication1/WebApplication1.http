@@ -1,6 +1,6 @@
 @WebApplication1_HostAddress = http://webapi-env.eba-g6rzuh3c.eu-north-1.elasticbeanstalk.com/
 
-GET {{WebApplication1_HostAddress}}/weatherforecast/
+GET {{WebApplication1_HostAddress}}/api/Values
 Accept: application/json
 
 ###
