@@ -15,7 +15,7 @@ namespace MyWebAPIProject
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>()
-                            .UseUrls("http://*:" + Environment.GetEnvironmentVariable("PORT"));
+                            .UseUrls("http://*:" + Environment.GetEnvironmentVariable("5050"));
         });
     }
 }
