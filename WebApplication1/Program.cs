@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace MyWebAPIProject
 {
@@ -15,7 +16,7 @@ namespace MyWebAPIProject
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>()
-                            .UseUrls("http://*:" + Environment.GetEnvironmentVariable("5050"));
-        });
+                              .UseUrls("http://*:" + Environment.GetEnvironmentVariable("PORT"));
+                });
     }
 }
