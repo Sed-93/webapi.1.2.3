@@ -30,8 +30,8 @@ jobs:
               with: 
                 aws_access_key: ${{ secrets.AWS_KEY }}
                 aws_secret_key: ${{ secrets.AWS_SECRETS_KEY }}
-                application_name: webapi
-                environment_name: Webapi-env
+                application_name: awsapicryp
+                environment_name: Awsapicryp-env
                 version_label: ${{ github.run_id }}
                 region: eu-north-1
                 deployment_package: site.zip
